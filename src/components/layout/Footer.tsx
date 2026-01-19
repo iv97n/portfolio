@@ -4,13 +4,12 @@ import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear();
-
+    /* {
     const nav = [
-        /* {
+        
             label: '(+1) 734 8123 8162',
             href: 'tel:+173481238162',
         },
-        */
         {
             label: 'ivan.heg.03@gmail.com',
             href: 'mailto:ivan.heg.03@gmail.com',
@@ -20,7 +19,7 @@ const Footer: React.FC = () => {
             href: '/legal',
         },
     ];
-
+    */
     return (
         <footer className="pb-10">
             <div className="container">
@@ -29,6 +28,7 @@ const Footer: React.FC = () => {
                         <div className="text-lg leading-[1.2] tracking-[-0.41px] font-Helvetica whitespace-nowrap md:text-3xl md:leading-[1.2] lg:text-[40px]">
                             Let's build something impactful together.
                         </div>
+                        {/*
                         <div className="flex flex-col gap-4 md:flex-row md:gap-8">
                             {nav.map((item, index) => (
                                 <div key={index}>
@@ -50,6 +50,7 @@ const Footer: React.FC = () => {
                                 </div>
                             ))}
                         </div>
+                        */}
                         <div className="text-sm leading-none tracking-[-0.41px] lg:text-base lg:leading-none text-appGray-500">
                             &copy; {currentYear} Personal website. All rights reserved
                         </div>
